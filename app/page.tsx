@@ -85,7 +85,7 @@ export default function Page() {
       <div className="flex min-h-screen">
         <aside className={`fixed inset-y-0 left-0 z-30 flex w-[248px] flex-col border-r border-white/[.07] bg-[#10111a] px-4 py-5 transition-transform duration-200 lg:relative lg:translate-x-0 ${menuOpen ? "translate-x-0" : "-translate-x-full"} ${collapsed ? "lg:w-[82px]" : ""}`}>
           <div className={`flex items-center ${collapsed ? "justify-center" : "justify-between"}`}>
-            {!collapsed && <div className="flex items-center gap-3"><div className="flex size-9 items-center justify-center rounded-xl bg-[#8b7cff] shadow-lg shadow-violet-500/20"><Activity className="size-5 text-white" /></div><span className="text-[15px] font-semibold tracking-tight">Apex Trader</span></div>}
+            {!collapsed && <div className="flex min-w-0 items-center"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%201000002783%20%281%29-FLIb2CV55FckTc4ocq7qVYm3mkqwzY.png" alt="CK Prop Firm" className="h-10 w-full max-w-[184px] object-contain object-left" /></div>}
             <button onClick={() => setCollapsed(!collapsed)} className="hidden rounded-lg p-2 text-[#8990a7] transition hover:bg-white/[.06] hover:text-white lg:block" aria-label="Toggle sidebar">{collapsed ? <PanelLeftOpen /> : <PanelLeftClose />}</button>
             <button onClick={() => setMenuOpen(false)} className="rounded-lg p-2 text-[#8990a7] lg:hidden" aria-label="Close menu"><X /></button>
           </div>
